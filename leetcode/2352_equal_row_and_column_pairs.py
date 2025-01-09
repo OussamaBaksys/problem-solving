@@ -1,7 +1,7 @@
 class Solution(object):
     def equalPairs(self, grid):
         mapping = {}
-        for row in range(grid):
+        for row in grid:
             key = tuple(row)
             if key in mapping:
                 mapping[key] += 1
